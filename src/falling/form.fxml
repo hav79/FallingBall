@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="falling.Controller">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="startStopButton" mnemonicParsing="false" text="Start" textAlignment="CENTER" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <AnchorPane fx:id="canvas" maxHeight="400.0" maxWidth="600.0" minHeight="300.0" minWidth="600.0" prefHeight="300.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-width: 0 0 3 0;" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle height="300.0" stroke="BLACK" strokeType="INSIDE" width="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+            <Circle fx:id="ball" fill="DODGERBLUE" layoutX="10.0" layoutY="35.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
